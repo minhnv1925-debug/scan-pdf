@@ -1,0 +1,67 @@
+XƯỞNG PDF - ỨNG DỤNG WEB CÀI ĐƯỢC
+=================================
+
+Thư mục này là một ứng dụng web hoàn chỉnh. Đưa cả thư mục lên một nơi lưu
+trang web miễn phí là có đường dẫn để mọi người mở trên điện thoại hoặc máy
+tính, cài ra màn hình như ứng dụng, dùng được cả khi mất mạng.
+
+File người dùng luôn được xử lý ngay trên máy của họ, không gửi lên máy chủ.
+Nơi lưu trang web chỉ chứa phần mềm, không chứa tài liệu của ai.
+
+
+CÁCH 1 (KHUYÊN DÙNG): CLOUDFLARE PAGES
+-------------------------------------
+1. Đăng ký tài khoản miễn phí tại dash.cloudflare.com (chỉ cần email).
+2. Vào mục "Workers & Pages" > "Create application" > tab "Pages"
+   > "Upload assets" (hoặc "Drag and drop your files").
+3. Đặt tên dự án, ví dụ: xuong-pdf
+   (đường dẫn sẽ là https://xuong-pdf.pages.dev, tên đã có người dùng thì đổi tên khác).
+4. Kéo thả CẢ THƯ MỤC xuong-pdf-app vào ô tải lên, bấm "Deploy site".
+5. Chờ 1 phút, mở đường dẫn vừa tạo là dùng được.
+
+Cập nhật bản mới: vào dự án > "Create deployment" > kéo thả thư mục mới.
+Người đã cài sẽ thấy thông báo "Đã có bản mới" và bấm Tải lại.
+
+
+CÁCH 2: GITHUB PAGES
+--------------------
+1. Đăng ký tài khoản miễn phí tại github.com.
+2. Bấm "New repository", đặt tên xuong-pdf, chọn Public, bấm "Create repository".
+3. Bấm "uploading an existing file", kéo thả TOÀN BỘ nội dung bên trong thư mục
+   xuong-pdf-app (index.html phải nằm ngay ở ngoài cùng), bấm "Commit changes".
+4. Vào Settings > Pages > Source: "Deploy from a branch", Branch: main, thư mục / (root), Save.
+5. Sau 1-2 phút, trang có ở https://<tên-tài-khoản>.github.io/xuong-pdf/
+
+Lưu ý: tài khoản GitHub miễn phí chỉ đăng được trang từ kho công khai (ai cũng
+xem được mã nguồn ứng dụng, không ảnh hưởng gì vì không có dữ liệu bên trong).
+
+
+CÁCH 3: NETLIFY DROP
+--------------------
+Vào app.netlify.com/drop, kéo thả thư mục. Nhanh nhất nhưng nếu không đăng ký
+tài khoản thì trang bị khoá và tự xoá sau một thời gian ngắn. Muốn giữ lâu
+phải đăng ký tài khoản miễn phí rồi nhận (claim) trang.
+
+
+CÀI RA MÀN HÌNH
+---------------
+- iPhone/iPad: mở bằng Safari > nút Chia sẻ > "Thêm vào MH chính".
+- Android: mở bằng Chrome > menu ⋮ > "Cài đặt ứng dụng".
+- Máy tính: Chrome hoặc Edge > biểu tượng cài đặt ở cuối thanh địa chỉ.
+Trong ứng dụng có nút "Cài ra màn hình" hướng dẫn sẵn từng loại máy.
+
+Sau khi cài:
+- Ứng dụng tự tải sẵn mọi thứ (khoảng 13 MB) để dùng khi mất mạng.
+- Android: chọn ảnh/PDF trong Zalo, thư viện ảnh > Chia sẻ > Xưởng PDF,
+  file vào thẳng ứng dụng (ảnh mở công cụ Scan, nhiều PDF mở công cụ Ghép).
+- Máy tính: chuột phải file PDF > Mở bằng > Xưởng PDF.
+- Nhấn giữ icon ứng dụng để mở nhanh Scan, Ghép PDF, PDF sang Word, PDF sang Excel.
+
+
+CHIA SẺ CHO MỌI NGƯỜI
+--------------------
+Bấm nút "Chia sẻ ứng dụng" trong ứng dụng để gửi đường dẫn qua Zalo, email...
+Người nhận mở đường dẫn là dùng được ngay, không cần tài khoản.
+
+Không mở bằng cách bấm đúp index.html trên máy: trình duyệt chặn một số tính năng
+với file mở trực tiếp. Phải mở qua đường dẫn https sau khi đưa lên mạng.
